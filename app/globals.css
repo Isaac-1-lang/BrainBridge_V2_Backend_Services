@@ -24,3 +24,37 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Custom styles for login page visuals */
+.login-left-bg {
+  background: #f5f7fb;
+}
+
+.login-right-bg {
+  background: radial-gradient(1200px 1200px at 80% 20%, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.01) 30%, transparent 40%),
+              radial-gradient(900px 900px at 20% 80%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.01) 35%, transparent 45%),
+              linear-gradient(180deg, #06043a 0%, #0b0a5d 40%, #1a124f 100%);
+}
+
+.btn-gradient {
+  background: linear-gradient(90deg,#08075C 0%,#3A38DE 100%);
+  box-shadow: 0 8px 22px rgba(10,9,60,0.45);
+}
+
+.card-white {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 14px 40px rgba(11,10,93,0.18);
+}
+
+.large-circle {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(30px);
+  opacity: 0.22;
+}
+
+.login-illustration {
+  width: 140px;
+  height: auto;
+}
