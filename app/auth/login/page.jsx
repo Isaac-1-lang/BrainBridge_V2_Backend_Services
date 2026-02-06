@@ -120,7 +120,7 @@ export default function LoginPage() {
 
             <h2 className="text-3xl font-bold mb-1 text-[#08075C]">Welcome Back</h2>
             <p className="text-sm text-gray-400 mb-8 font-medium">
-              Don't have an account? <Link href="/signup" className="text-[#3A38DE] font-bold hover:underline">Sign Up</Link>
+              Don't have an account? <Link href="/auth/signup" className="text-[#3A38DE] font-bold hover:underline">Sign Up</Link>
             </p>
 
             <div className="space-y-6">
@@ -145,9 +145,9 @@ export default function LoginPage() {
                 <label htmlFor="remember" className="text-xs text-gray-500 font-medium cursor-pointer">Keep me logged in</label>
               </div>
 
-              <button onClick={handleLogin} className="btn-brand w-full text-white py-4 rounded-2xl font-bold text-lg shadow-xl mt-4 active:scale-95 transition-all">
+              <Link href="/dashboard" className="btn-brand w-full text-white py-4 rounded-2xl font-bold text-lg shadow-xl mt-4 active:scale-95 transition-all inline-block text-center">
                 Sign In
-              </button>
+              </Link>
             </div>
           </div>
 
