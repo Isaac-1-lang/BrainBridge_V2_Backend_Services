@@ -18,13 +18,12 @@ export default function NavigationShell({ children }) {
   return (
     <div className="flex min-h-screen bg-[#F5F6FA] font-sans">
       
-   
+      {/* SIDEBAR */}
       <aside className="w-64 bg-white flex flex-col fixed h-full z-30 border-r border-slate-200">
         <div className="p-7">
-         <h1 className="text-2xl font-bold mb-6 bg-clip-text text-transparent w-fit"
-              style={{ fontFamily: "'Playpen Sans', cursive", backgroundImage: "linear-gradient(90deg, #08075C, #3A38DE)" }}>
-              BrainBridge
-            </h1>
+          <h1 className="text-2xl font-black text-[#08075C] tracking-tight">
+            BrainBridge
+          </h1>
         </div>
 
         <nav className="flex-1 px-4 mt-2 space-y-1">

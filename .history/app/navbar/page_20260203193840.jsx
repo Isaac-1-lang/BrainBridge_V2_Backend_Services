@@ -18,10 +18,10 @@ export default function NavigationShell({ children }) {
   return (
     <div className="flex min-h-screen bg-[#F5F6FA] font-sans">
       
-   
+      {/* SIDEBAR */}
       <aside className="w-64 bg-white flex flex-col fixed h-full z-30 border-r border-slate-200">
         <div className="p-7">
-         <h1 className="text-2xl font-bold mb-6 bg-clip-text text-transparent w-fit"
+         <h1 className="text-3xl font-bold mb-6 bg-clip-text text-transparent w-fit"
               style={{ fontFamily: "'Playpen Sans', cursive", backgroundImage: "linear-gradient(90deg, #08075C, #3A38DE)" }}>
               BrainBridge
             </h1>

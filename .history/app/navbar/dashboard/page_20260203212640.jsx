@@ -1,6 +1,6 @@
 import WelcomeSection from "../components/dashboard/WelcomeSection"
 import StatsOverview from "../components/dashboard/StatsOverview";
-import MyProjectsSection from "../components/dashboard/MyProjectSection";
+import MyProjectsSection from ".//components/dashboard/MyProjectSection";
 
 export default function DashboardPage() {
   return (
