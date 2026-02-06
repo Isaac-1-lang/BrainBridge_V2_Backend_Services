@@ -146,7 +146,7 @@ export default function SignUpPage() {
 
             <h2 className="text-3xl font-bold mb-1 text-[#08075C]">Create an account</h2>
             <p className="text-sm text-gray-400 mb-8 font-medium">
-              Join the developer hub. Already a member? <Link href="/login" className="text-[#3A38DE] font-bold hover:underline">Login</Link>
+              Join the developer hub. Already a member? <Link href="/auth/login" className="text-[#3A38DE] font-bold hover:underline">Login</Link>
             </p>
 
             <div className="space-y-4">
@@ -195,9 +195,9 @@ export default function SignUpPage() {
                 {errors.confirmPassword && <span className="text-[10px] text-red-500 font-bold ml-1">{errors.confirmPassword}</span>}
               </div>
 
-              <button onClick={handleSignUp} className="btn-brand w-full text-white py-4 rounded-2xl font-bold text-lg shadow-xl active:scale-95 transition-all">
+              <Link href="/dashboard" className="btn-brand w-full text-white py-4 rounded-2xl font-bold text-lg shadow-xl active:scale-95 transition-all inline-block text-center">
                 Create Account
-              </button>
+              </Link>
             </div>
           </div>
 
