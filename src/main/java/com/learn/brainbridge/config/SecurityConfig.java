@@ -39,7 +39,7 @@ public class SecurityConfig {
                                 "/ws/**"
                         ).permitAll()
                         // Public read-only project endpoints
-                        .requestMatchers(HttpMethod.GET, "/projects/all", "/projects/fetch/**", "/projects/team/**").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/projects/all", "/projects/fetch/**", "/projects/team/**", "/invitations/project/*/members").permitAll()
                         // All other project endpoints (POST, PUT, DELETE) require auth
                         .anyRequest().authenticated()
                 )

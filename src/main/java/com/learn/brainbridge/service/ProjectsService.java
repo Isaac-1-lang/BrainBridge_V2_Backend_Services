@@ -1,12 +1,16 @@
 package com.learn.brainbridge.service;
 
+import com.learn.brainbridge.dtos.AnalyticsDTO;
 import com.learn.brainbridge.entity.Projects;
 import com.learn.brainbridge.repository.ProjectsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class ProjectsService {
@@ -42,14 +46,6 @@ public class ProjectsService {
         repo.deleteById(id);
     }
 
-    // public List<Projects> getProjectsByStatus(Status status) {
-    // return repo.findByProjectStatus(status);
-    // }
-    //
-    // public List<Projects> getProjectsByVisibility(Visibility visibility) {
-    // return repo.findByProjectVisibility(visibility);
-    // }
-    //
     public List<Projects> getProjectsByOwner(Integer ownerId) {
         return repo.findByOwnerId(ownerId);
     }
@@ -58,18 +54,73 @@ public class ProjectsService {
         return repo.findByTeamId(teamId);
     }
 
-    // public List<Projects> searchProjectsByTitle(String keyword) {
-    // return repo.findByTitleContainingIgnoreCase(keyword);
-    // }
-    //
-    // public List<Projects> getProjectsByDateRange(LocalDate start, LocalDate end)
-    // {
-    // return repo.findByStartDateBetweenAndEndDateBetween(start, start, end, end);
-    // }
     public void incrementViewCount(Integer id) {
         repo.findById(id).ifPresent(project -> {
             project.setViewCount(project.getViewCount() + 1);
             repo.save(project);
         });
+    }
+
+    // Analytics methods
+    public AnalyticsDTO getProjectAnalytics(Integer projectId) {
+        Optional<Projects> projectOpt = repo.findById(projectId);
+        if (projectOpt.isEmpty()) {
+            return null;
+        }
+
+        Projects project = projectOpt.get();
+        long daysActive = ChronoUnit.DAYS.between(project.getCreatedAt(), LocalDate.now());
+
+        return new AnalyticsDTO(
+            project.getId(),
+            project.getTitle(),
+            project.getViewCount(),
+            project.getEnterpriseRequests(),
+            project.getCreatedAt(),
+            project.getUpdatedAt(),
+            daysActive,
+            project.getProjectStatus().toString(),
+            project.getProjectVisibility().toString()
+        );
+    }
+
+    public List<AnalyticsDTO> getOwnerProjectsAnalytics(Integer ownerId) {
+        List<Projects> projects = repo.findByOwnerId(ownerId);
+        return projects.stream()
+            .map(project -> {
+                long daysActive = ChronoUnit.DAYS.between(project.getCreatedAt(), LocalDate.now());
+                return new AnalyticsDTO(
+                    project.getId(),
+                    project.getTitle(),
+                    project.getViewCount(),
+                    project.getEnterpriseRequests(),
+                    project.getCreatedAt(),
+                    project.getUpdatedAt(),
+                    daysActive,
+                    project.getProjectStatus().toString(),
+                    project.getProjectVisibility().toString()
+                );
+            })
+            .collect(Collectors.toList());
+    }
+
+    public List<AnalyticsDTO> getAllProjectsAnalytics() {
+        List<Projects> projects = repo.findAll();
+        return projects.stream()
+            .map(project -> {
+                long daysActive = ChronoUnit.DAYS.between(project.getCreatedAt(), LocalDate.now());
+                return new AnalyticsDTO(
+                    project.getId(),
+                    project.getTitle(),
+                    project.getViewCount(),
+                    project.getEnterpriseRequests(),
+                    project.getCreatedAt(),
+                    project.getUpdatedAt(),
+                    daysActive,
+                    project.getProjectStatus().toString(),
+                    project.getProjectVisibility().toString()
+                );
+            })
+            .collect(Collectors.toList());
     }
 }

@@ -2,6 +2,7 @@ package com.learn.brainbridge.controllers;
 
 import com.learn.brainbridge.dtos.ProjectDTO;
 import com.learn.brainbridge.dtos.ProjectResponseDTO;
+import com.learn.brainbridge.dtos.AnalyticsDTO;
 import com.learn.brainbridge.entity.Projects;
 import com.learn.brainbridge.entity.User;
 import com.learn.brainbridge.repository.UserRepository;
@@ -327,6 +328,41 @@ public class ProjectsController {
         );
         
         return ResponseEntity.status(HttpStatus.OK).body(projectDTO);
+    }
+
+    @GetMapping("/analytics/{id}")
+    public ResponseEntity<?> getProjectAnalytics(@PathVariable("id") Integer id) {
+        log.info("=== Get Project Analytics Request ===");
+        log.info("  Project ID: {}", id);
+
+        AnalyticsDTO analytics = service.getProjectAnalytics(id);
+        if (analytics == null) {
+            log.warn("  Project not found: {}", id);
+            return ResponseEntity.status(HttpStatus.NOT_FOUND)
+                    .body(java.util.Map.of("error", "Project not found"));
+        }
+
+        log.info("  Analytics retrieved for project: {}", analytics.getProjectTitle());
+        return ResponseEntity.status(HttpStatus.OK).body(analytics);
+    }
+
+    @GetMapping("/analytics/owner/{ownerId}")
+    public ResponseEntity<?> getOwnerProjectsAnalytics(@PathVariable("ownerId") Integer ownerId) {
+        log.info("=== Get Owner Projects Analytics Request ===");
+        log.info("  Owner ID: {}", ownerId);
+
+        java.util.List<AnalyticsDTO> analytics = service.getOwnerProjectsAnalytics(ownerId);
+        log.info("  Found {} projects for owner", analytics.size());
+        return ResponseEntity.status(HttpStatus.OK).body(analytics);
+    }
+
+    @GetMapping("/analytics/all")
+    public ResponseEntity<?> getAllProjectsAnalytics() {
+        log.info("=== Get All Projects Analytics Request ===");
+
+        java.util.List<AnalyticsDTO> analytics = service.getAllProjectsAnalytics();
+        log.info("  Found {} projects total", analytics.size());
+        return ResponseEntity.status(HttpStatus.OK).body(analytics);
     }
 
     @DeleteMapping("/remove/{id}")

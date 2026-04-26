@@ -22,19 +22,7 @@ public interface ProjectsRepository extends JpaRepository<Projects, Integer> {
 
     List<Projects> findByTeamId(Integer teamId);
 
-//    List<Projects> findBySourceIdeaId(Integer sourceIdeaId);
-//
-//    List<Projects> findByProjectStatusAndOwnerId(Status status, Integer ownerId);
-//
-//    List<Projects> findByProjectStatusAndTeamId(Status status, Integer teamId);
-//
-//    List<Projects> findByProjectVisibilityAndTeamId(Visibility visibility, Integer teamId);
-
     List<Projects> findByTitleContainingIgnoreCase(String title);
-
-//    List<Projects> findByStartDateAfter(java.time.LocalDate date);
-//
-//    List<Projects> findByEndDateBefore(java.time.LocalDate date);
 
     List<Projects> findByStartDateBetweenAndEndDateBetween(
             java.time.LocalDate startStart, java.time.LocalDate startEnd,
