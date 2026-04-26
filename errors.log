@@ -1,0 +1,357 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.brainBridge:brainbridge >---------------------
+[INFO] Building brain bridge 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ brainbridge ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ brainbridge ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 71 source files with javac [debug parameters release 21] to target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[46,84] cannot find symbol
+  symbol:   method getReceiverId()
+  location: variable dto of type com.learn.brainbridge.dtos.MessageDTO
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[47,24] cannot find symbol
+  symbol:   method getProjectId()
+  location: variable dto of type com.learn.brainbridge.dtos.MessageDTO
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[52,56] cannot find symbol
+  symbol:   method getReceiverId()
+  location: variable dto of type com.learn.brainbridge.dtos.MessageDTO
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[57,20] cannot find symbol
+  symbol:   method getProjectId()
+  location: variable dto of type com.learn.brainbridge.dtos.MessageDTO
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[58,58] cannot find symbol
+  symbol:   method getProjectId()
+  location: variable dto of type com.learn.brainbridge.dtos.MessageDTO
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[61,86] cannot find symbol
+  symbol:   method getContent()
+  location: variable dto of type com.learn.brainbridge.dtos.MessageDTO
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[119,20] cannot find symbol
+  symbol:   method getId()
+  location: variable m of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[121,14] cannot find symbol
+  symbol:   method getSender()
+  location: variable m of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[122,30] cannot find symbol
+  symbol:   method getSender()
+  location: variable m of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[123,36] cannot find symbol
+  symbol:   method getSender()
+  location: variable m of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[126,14] cannot find symbol
+  symbol:   method getReceiver()
+  location: variable m of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[127,32] cannot find symbol
+  symbol:   method getReceiver()
+  location: variable m of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[128,38] cannot find symbol
+  symbol:   method getReceiver()
+  location: variable m of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[131,14] cannot find symbol
+  symbol:   method getProject()
+  location: variable m of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[132,31] cannot find symbol
+  symbol:   method getProject()
+  location: variable m of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[133,33] cannot find symbol
+  symbol:   method getProject()
+  location: variable m of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[136,25] cannot find symbol
+  symbol:   method getContent()
+  location: variable m of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[137,24] cannot find symbol
+  symbol:   method getIsRead()
+  location: variable m of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[138,27] cannot find symbol
+  symbol:   method getCreatedAt()
+  location: variable m of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/MessageService.java:[32,16] cannot find symbol
+  symbol:   method setSender(com.learn.brainbridge.entity.User)
+  location: variable message of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/MessageService.java:[33,16] cannot find symbol
+  symbol:   method setReceiver(com.learn.brainbridge.entity.User)
+  location: variable message of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/MessageService.java:[34,16] cannot find symbol
+  symbol:   method setProject(com.learn.brainbridge.entity.Projects)
+  location: variable message of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/MessageService.java:[35,16] cannot find symbol
+  symbol:   method setContent(java.lang.String)
+  location: variable message of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/MessageService.java:[36,16] cannot find symbol
+  symbol:   method setIsRead(boolean)
+  location: variable message of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/MessageService.java:[40,24] cannot find symbol
+  symbol:   method getId()
+  location: variable saved of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/MessageService.java:[41,12] cannot find symbol
+  symbol:   method setSenderId(java.lang.Long)
+  location: variable dto of type com.learn.brainbridge.dtos.MessageDTO
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/MessageService.java:[42,12] cannot find symbol
+  symbol:   method setSenderUsername(java.lang.String)
+  location: variable dto of type com.learn.brainbridge.dtos.MessageDTO
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/MessageService.java:[43,12] cannot find symbol
+  symbol:   method setReceiverId(java.lang.Long)
+  location: variable dto of type com.learn.brainbridge.dtos.MessageDTO
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/MessageService.java:[44,12] cannot find symbol
+  symbol:   method setReceiverUsername(java.lang.String)
+  location: variable dto of type com.learn.brainbridge.dtos.MessageDTO
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/MessageService.java:[46,16] cannot find symbol
+  symbol:   method setProjectId(java.lang.Integer)
+  location: variable dto of type com.learn.brainbridge.dtos.MessageDTO
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/MessageService.java:[47,16] cannot find symbol
+  symbol:   method setProjectName(java.lang.String)
+  location: variable dto of type com.learn.brainbridge.dtos.MessageDTO
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/MessageService.java:[49,29] cannot find symbol
+  symbol:   method getContent()
+  location: variable saved of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/MessageService.java:[50,28] cannot find symbol
+  symbol:   method getIsRead()
+  location: variable saved of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/MessageService.java:[51,31] cannot find symbol
+  symbol:   method getCreatedAt()
+  location: variable saved of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/MessageService.java:[76,14] cannot find symbol
+  symbol:   method setIsRead(boolean)
+  location: variable m of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/NotificationService.java:[29,21] cannot find symbol
+  symbol:   method setUser(com.learn.brainbridge.entity.User)
+  location: variable notification of type com.learn.brainbridge.entity.Notification
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/NotificationService.java:[30,21] cannot find symbol
+  symbol:   method setType(com.learn.brainbridge.enums.NotificationType)
+  location: variable notification of type com.learn.brainbridge.entity.Notification
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/NotificationService.java:[31,21] cannot find symbol
+  symbol:   method setTitle(java.lang.String)
+  location: variable notification of type com.learn.brainbridge.entity.Notification
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/NotificationService.java:[32,21] cannot find symbol
+  symbol:   method setBody(java.lang.String)
+  location: variable notification of type com.learn.brainbridge.entity.Notification
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/NotificationService.java:[33,21] cannot find symbol
+  symbol:   method setIsRead(boolean)
+  location: variable notification of type com.learn.brainbridge.entity.Notification
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/NotificationService.java:[37,76] cannot find symbol
+  symbol:   method getCreatedAt()
+  location: variable saved of type com.learn.brainbridge.entity.Notification
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/NotificationService.java:[37,57] cannot find symbol
+  symbol:   method getIsRead()
+  location: variable saved of type com.learn.brainbridge.entity.Notification
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/NotificationService.java:[37,40] cannot find symbol
+  symbol:   method getBody()
+  location: variable saved of type com.learn.brainbridge.entity.Notification
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/NotificationService.java:[37,22] cannot find symbol
+  symbol:   method getTitle()
+  location: variable saved of type com.learn.brainbridge.entity.Notification
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/NotificationService.java:[36,71] cannot find symbol
+  symbol:   method getType()
+  location: variable saved of type com.learn.brainbridge.entity.Notification
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/NotificationService.java:[36,56] cannot find symbol
+  symbol:   method getId()
+  location: variable saved of type com.learn.brainbridge.entity.Notification
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/NotificationService.java:[51,14] cannot find symbol
+  symbol:   method setIsRead(boolean)
+  location: variable n of type com.learn.brainbridge.entity.Notification
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/NotificationController.java:[46,30] cannot find symbol
+  symbol:   method getCreatedAt()
+  location: variable n of type com.learn.brainbridge.entity.Notification
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/NotificationController.java:[45,103] cannot find symbol
+  symbol:   method getIsRead()
+  location: variable n of type com.learn.brainbridge.entity.Notification
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/NotificationController.java:[45,90] cannot find symbol
+  symbol:   method getBody()
+  location: variable n of type com.learn.brainbridge.entity.Notification
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/NotificationController.java:[45,76] cannot find symbol
+  symbol:   method getTitle()
+  location: variable n of type com.learn.brainbridge.entity.Notification
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/NotificationController.java:[45,63] cannot find symbol
+  symbol:   method getType()
+  location: variable n of type com.learn.brainbridge.entity.Notification
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/NotificationController.java:[45,52] cannot find symbol
+  symbol:   method getId()
+  location: variable n of type com.learn.brainbridge.entity.Notification
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/NotificationController.java:[47,29] incompatible types: inference variable T has incompatible bounds
+    equality constraints: com.learn.brainbridge.dtos.NotificationDTO
+    lower bounds: java.lang.Object
+[INFO] 54 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.945 s
+[INFO] Finished at: 2026-04-08T01:06:46+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile (default-compile) on project brainbridge: Compilation failure: Compilation failure: 
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[46,84] cannot find symbol
+[ERROR]   symbol:   method getReceiverId()
+[ERROR]   location: variable dto of type com.learn.brainbridge.dtos.MessageDTO
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[47,24] cannot find symbol
+[ERROR]   symbol:   method getProjectId()
+[ERROR]   location: variable dto of type com.learn.brainbridge.dtos.MessageDTO
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[52,56] cannot find symbol
+[ERROR]   symbol:   method getReceiverId()
+[ERROR]   location: variable dto of type com.learn.brainbridge.dtos.MessageDTO
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[57,20] cannot find symbol
+[ERROR]   symbol:   method getProjectId()
+[ERROR]   location: variable dto of type com.learn.brainbridge.dtos.MessageDTO
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[58,58] cannot find symbol
+[ERROR]   symbol:   method getProjectId()
+[ERROR]   location: variable dto of type com.learn.brainbridge.dtos.MessageDTO
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[61,86] cannot find symbol
+[ERROR]   symbol:   method getContent()
+[ERROR]   location: variable dto of type com.learn.brainbridge.dtos.MessageDTO
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[119,20] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable m of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[121,14] cannot find symbol
+[ERROR]   symbol:   method getSender()
+[ERROR]   location: variable m of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[122,30] cannot find symbol
+[ERROR]   symbol:   method getSender()
+[ERROR]   location: variable m of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[123,36] cannot find symbol
+[ERROR]   symbol:   method getSender()
+[ERROR]   location: variable m of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[126,14] cannot find symbol
+[ERROR]   symbol:   method getReceiver()
+[ERROR]   location: variable m of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[127,32] cannot find symbol
+[ERROR]   symbol:   method getReceiver()
+[ERROR]   location: variable m of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[128,38] cannot find symbol
+[ERROR]   symbol:   method getReceiver()
+[ERROR]   location: variable m of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[131,14] cannot find symbol
+[ERROR]   symbol:   method getProject()
+[ERROR]   location: variable m of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[132,31] cannot find symbol
+[ERROR]   symbol:   method getProject()
+[ERROR]   location: variable m of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[133,33] cannot find symbol
+[ERROR]   symbol:   method getProject()
+[ERROR]   location: variable m of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[136,25] cannot find symbol
+[ERROR]   symbol:   method getContent()
+[ERROR]   location: variable m of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[137,24] cannot find symbol
+[ERROR]   symbol:   method getIsRead()
+[ERROR]   location: variable m of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/MessageController.java:[138,27] cannot find symbol
+[ERROR]   symbol:   method getCreatedAt()
+[ERROR]   location: variable m of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/MessageService.java:[32,16] cannot find symbol
+[ERROR]   symbol:   method setSender(com.learn.brainbridge.entity.User)
+[ERROR]   location: variable message of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/MessageService.java:[33,16] cannot find symbol
+[ERROR]   symbol:   method setReceiver(com.learn.brainbridge.entity.User)
+[ERROR]   location: variable message of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/MessageService.java:[34,16] cannot find symbol
+[ERROR]   symbol:   method setProject(com.learn.brainbridge.entity.Projects)
+[ERROR]   location: variable message of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/MessageService.java:[35,16] cannot find symbol
+[ERROR]   symbol:   method setContent(java.lang.String)
+[ERROR]   location: variable message of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/MessageService.java:[36,16] cannot find symbol
+[ERROR]   symbol:   method setIsRead(boolean)
+[ERROR]   location: variable message of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/MessageService.java:[40,24] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable saved of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/MessageService.java:[41,12] cannot find symbol
+[ERROR]   symbol:   method setSenderId(java.lang.Long)
+[ERROR]   location: variable dto of type com.learn.brainbridge.dtos.MessageDTO
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/MessageService.java:[42,12] cannot find symbol
+[ERROR]   symbol:   method setSenderUsername(java.lang.String)
+[ERROR]   location: variable dto of type com.learn.brainbridge.dtos.MessageDTO
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/MessageService.java:[43,12] cannot find symbol
+[ERROR]   symbol:   method setReceiverId(java.lang.Long)
+[ERROR]   location: variable dto of type com.learn.brainbridge.dtos.MessageDTO
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/MessageService.java:[44,12] cannot find symbol
+[ERROR]   symbol:   method setReceiverUsername(java.lang.String)
+[ERROR]   location: variable dto of type com.learn.brainbridge.dtos.MessageDTO
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/MessageService.java:[46,16] cannot find symbol
+[ERROR]   symbol:   method setProjectId(java.lang.Integer)
+[ERROR]   location: variable dto of type com.learn.brainbridge.dtos.MessageDTO
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/MessageService.java:[47,16] cannot find symbol
+[ERROR]   symbol:   method setProjectName(java.lang.String)
+[ERROR]   location: variable dto of type com.learn.brainbridge.dtos.MessageDTO
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/MessageService.java:[49,29] cannot find symbol
+[ERROR]   symbol:   method getContent()
+[ERROR]   location: variable saved of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/MessageService.java:[50,28] cannot find symbol
+[ERROR]   symbol:   method getIsRead()
+[ERROR]   location: variable saved of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/MessageService.java:[51,31] cannot find symbol
+[ERROR]   symbol:   method getCreatedAt()
+[ERROR]   location: variable saved of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/MessageService.java:[76,14] cannot find symbol
+[ERROR]   symbol:   method setIsRead(boolean)
+[ERROR]   location: variable m of type com.learn.brainbridge.entity.Message
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/NotificationService.java:[29,21] cannot find symbol
+[ERROR]   symbol:   method setUser(com.learn.brainbridge.entity.User)
+[ERROR]   location: variable notification of type com.learn.brainbridge.entity.Notification
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/NotificationService.java:[30,21] cannot find symbol
+[ERROR]   symbol:   method setType(com.learn.brainbridge.enums.NotificationType)
+[ERROR]   location: variable notification of type com.learn.brainbridge.entity.Notification
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/NotificationService.java:[31,21] cannot find symbol
+[ERROR]   symbol:   method setTitle(java.lang.String)
+[ERROR]   location: variable notification of type com.learn.brainbridge.entity.Notification
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/NotificationService.java:[32,21] cannot find symbol
+[ERROR]   symbol:   method setBody(java.lang.String)
+[ERROR]   location: variable notification of type com.learn.brainbridge.entity.Notification
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/NotificationService.java:[33,21] cannot find symbol
+[ERROR]   symbol:   method setIsRead(boolean)
+[ERROR]   location: variable notification of type com.learn.brainbridge.entity.Notification
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/NotificationService.java:[37,76] cannot find symbol
+[ERROR]   symbol:   method getCreatedAt()
+[ERROR]   location: variable saved of type com.learn.brainbridge.entity.Notification
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/NotificationService.java:[37,57] cannot find symbol
+[ERROR]   symbol:   method getIsRead()
+[ERROR]   location: variable saved of type com.learn.brainbridge.entity.Notification
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/NotificationService.java:[37,40] cannot find symbol
+[ERROR]   symbol:   method getBody()
+[ERROR]   location: variable saved of type com.learn.brainbridge.entity.Notification
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/NotificationService.java:[37,22] cannot find symbol
+[ERROR]   symbol:   method getTitle()
+[ERROR]   location: variable saved of type com.learn.brainbridge.entity.Notification
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/NotificationService.java:[36,71] cannot find symbol
+[ERROR]   symbol:   method getType()
+[ERROR]   location: variable saved of type com.learn.brainbridge.entity.Notification
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/NotificationService.java:[36,56] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable saved of type com.learn.brainbridge.entity.Notification
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/service/NotificationService.java:[51,14] cannot find symbol
+[ERROR]   symbol:   method setIsRead(boolean)
+[ERROR]   location: variable n of type com.learn.brainbridge.entity.Notification
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/NotificationController.java:[46,30] cannot find symbol
+[ERROR]   symbol:   method getCreatedAt()
+[ERROR]   location: variable n of type com.learn.brainbridge.entity.Notification
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/NotificationController.java:[45,103] cannot find symbol
+[ERROR]   symbol:   method getIsRead()
+[ERROR]   location: variable n of type com.learn.brainbridge.entity.Notification
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/NotificationController.java:[45,90] cannot find symbol
+[ERROR]   symbol:   method getBody()
+[ERROR]   location: variable n of type com.learn.brainbridge.entity.Notification
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/NotificationController.java:[45,76] cannot find symbol
+[ERROR]   symbol:   method getTitle()
+[ERROR]   location: variable n of type com.learn.brainbridge.entity.Notification
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/NotificationController.java:[45,63] cannot find symbol
+[ERROR]   symbol:   method getType()
+[ERROR]   location: variable n of type com.learn.brainbridge.entity.Notification
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/NotificationController.java:[45,52] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable n of type com.learn.brainbridge.entity.Notification
+[ERROR] /C:/Users/HP/Desktop/ishara/projeccts/BrainBridge/backend/BrainBridge_V2/Backend/brainbridge/brainbridge/src/main/java/com/learn/brainbridge/controllers/NotificationController.java:[47,29] incompatible types: inference variable T has incompatible bounds
+[ERROR]     equality constraints: com.learn.brainbridge.dtos.NotificationDTO
+[ERROR]     lower bounds: java.lang.Object
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
