@@ -76,8 +76,8 @@ public class ProjectsController {
         project.setTitle(projectDTO.getTitle());
         project.setDescription(projectDTO.getDescription());
         project.setOwnerId(ownerId);
-        project.setTeamId(projectDTO.getTeamId());
-        project.setSourceIdeaId(projectDTO.getSourceIdeaId());
+        project.setTeamId(projectDTO.getTeamId() != null ? projectDTO.getTeamId() : 0);
+        project.setSourceIdeaId(projectDTO.getSourceIdeaId() != null ? projectDTO.getSourceIdeaId() : 0);
         project.setCoverImageUrl(projectDTO.getCoverImageUrl());
         project.setRepoUrl(projectDTO.getRepoUrl());
         project.setStartDate(projectDTO.getStartDate());
