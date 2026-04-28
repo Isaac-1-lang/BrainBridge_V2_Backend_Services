@@ -123,4 +123,48 @@ public class ProjectsService {
             })
             .collect(Collectors.toList());
     }
+
+        // =========================
+    // ANALYTICS METHODS
+    // =========================
+
+    public Integer getProjectViews(Integer id) {
+        return repo.findById(id)
+                .orElseThrow(() -> new RuntimeException("Project not found"))
+                .getViewCount();
+    }
+
+    public Integer getEnterpriseRequests(Integer id) {
+        return repo.findById(id)
+                .orElseThrow(() -> new RuntimeException("Project not found"))
+                .getEnterpriseRequests();
+    }
+
+    public String getProjectStatus(Integer id) {
+        return repo.findById(id)
+                .orElseThrow(() -> new RuntimeException("Project not found"))
+                .getProjectStatus()
+                .name();
+    }
+
+    public String getProjectVisibility(Integer id) {
+        return repo.findById(id)
+                .orElseThrow(() -> new RuntimeException("Project not found"))
+                .getProjectVisibility()
+                .name();
+    }
+
+    // NOTE: No real members system exists in your entity yet
+    // This is a safe placeholder for future implementation
+    public Integer getProjectMembersCount(Integer id) {
+        Projects project = repo.findById(id)
+                .orElseThrow(() -> new RuntimeException("Project not found"));
+
+        if (project.getTeamId() == null) {
+            return 0;
+        }
+
+        // TODO: Replace this when TeamMember entity is added
+        return 0;
+    }
 }
