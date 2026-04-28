@@ -6,6 +6,7 @@ import com.learn.brainbridge.dtos.AnalyticsDTO;
 import com.learn.brainbridge.entity.Projects;
 import com.learn.brainbridge.entity.User;
 import com.learn.brainbridge.repository.UserRepository;
+import com.learn.brainbridge.service.AnalyticsService;
 import com.learn.brainbridge.service.ProjectsService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
@@ -29,11 +30,13 @@ public class ProjectsController {
     private static final Logger log = LoggerFactory.getLogger(ProjectsController.class);
     private final ProjectsService service;
     private final UserRepository userRepository;
+    private final AnalyticsService analyticsService;
 
     @Autowired
-    public ProjectsController(ProjectsService service, UserRepository userRepository) {
+    public ProjectsController(ProjectsService service, UserRepository userRepository,AnalyticsService analyticsService) {
         this.service = service;
         this.userRepository = userRepository;
+        this.analyticsService = analyticsService;
     }
 
     @PostMapping("/add")
@@ -363,6 +366,62 @@ public class ProjectsController {
         java.util.List<AnalyticsDTO> analytics = service.getAllProjectsAnalytics();
         log.info("  Found {} projects total", analytics.size());
         return ResponseEntity.status(HttpStatus.OK).body(analytics);
+    }
+
+    @GetMapping("/analytics/{id}/views")
+    public ResponseEntity<?> getProjectViews(@PathVariable Integer id) {
+        return ResponseEntity.ok(
+                List.of(
+                        "projectId", id,
+                        "views", service.getProjectViews(id)
+                )
+        );
+    }
+
+    @GetMapping("/analytics/{id}/enterprise-requests")
+    public ResponseEntity<?> getEnterpriseRequests(@PathVariable Integer id) {
+        return ResponseEntity.ok(
+                List.of(
+                        "projectId", id,
+                        "enterpriseRequests", service.getEnterpriseRequests(id)
+                )
+        );
+    }
+
+    @GetMapping("/analytics/{id}/members")
+    public ResponseEntity<?> getProjectMembers(@PathVariable Integer id) {
+        return ResponseEntity.ok(
+                List.of(
+                        "projectId", id,
+                        "membersCount", service.getProjectMembersCount(id)
+                )
+        );
+    }
+
+    // ======================================================
+    // 5. STATUS ANALYTICS (OPTIONAL BUT USEFUL)
+    // ======================================================
+    @GetMapping("/analytics/{id}/status")
+    public ResponseEntity<?> getProjectStatus(@PathVariable Integer id) {
+        return ResponseEntity.ok(
+                List.of(
+                        "projectId", id,
+                        "status", service.getProjectStatus(id)
+                )
+        );
+    }
+
+    // ======================================================
+    // 6. VISIBILITY ANALYTICS
+    // ======================================================
+    @GetMapping("/analytics/{id}/visibility")
+    public ResponseEntity<?> getProjectVisibility(@PathVariable Integer id) {
+        return ResponseEntity.ok(
+                List.of(
+                        "projectId", id,
+                        "visibility", service.getProjectVisibility(id)
+                )
+        );
     }
 
     @DeleteMapping("/remove/{id}")
